@@ -14,19 +14,19 @@ export default function Card({ item }) {
             </View>
             <View style={styles.itemList}>
                 <View style={styles.item}>
-                    <Text style={stylesglobal.text}>Customer</Text>
+                    <Text style={[stylesglobal.text, styles.textTitle]}>Customer</Text>
                     <Text style={stylesglobal.text}>{item?.customer}</Text>
                 </View>
                 <View style={styles.item}>
-                    <Text style={stylesglobal.text}>Qty/Package</Text>
+                    <Text style={[stylesglobal.text, styles.textTitle]}>Qty/Package</Text>
                     <Text style={stylesglobal.text}>{item?.qty}</Text>
                 </View>
                 <View style={styles.item}>
-                    <Text style={stylesglobal.text}>Total Item</Text>
+                    <Text style={[stylesglobal.text, styles.textTitle]}>Total Item</Text>
                     <Text style={stylesglobal.text}>{item?.total}</Text>
                 </View>
                 <View style={styles.item}>
-                    <Text style={stylesglobal.text}>Order Date</Text>
+                    <Text style={[stylesglobal.text, styles.textTitle]}>Order Date</Text>
                     <Text style={stylesglobal.text}>{item?.date}</Text>
                 </View>
             </View>
@@ -77,5 +77,8 @@ const styles = StyleSheet.create({
     idOrder: {
         fontWeight: '700',
         color: '#052A49',
+    },
+    textTitle: {
+        color: '#4F4F4F',
     },
 });
