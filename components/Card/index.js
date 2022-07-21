@@ -6,7 +6,7 @@ export default function Card({ item }) {
     return (
         <View style={styles.comtainer}>
             <View style={styles.head}>
-                <View style={styles.item}>
+                <View style={styles.itemHead}>
                     <Text style={styles.order}>Order Id</Text>
                     <Text style={[stylesglobal.text, styles.idOrder]}>{item?.order_id}</Text>
                 </View>
@@ -51,6 +51,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingBottom: 15,
+    },
+    itemHead: {
+        flexDirection: 'column',
     },
     item: {
         flexDirection: 'row',
