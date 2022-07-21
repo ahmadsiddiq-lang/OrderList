@@ -71,8 +71,8 @@ export default function App() {
         >
           {data.map((item, i) => {
             return (
-              <View style={styles.listItem}>
-                <Card key={i} item={item} />
+              <View key={i} style={styles.listItem}>
+                <Card item={item} />
               </View>
             );
           })}
