@@ -12,7 +12,7 @@ export default function Card({ item }) {
                 </View>
                 <Text style={[stylesglobal.text, item?.status === 'Shipped' ? styles.status : styles.statusComplate]}>{item?.status}</Text>
             </View>
-            <View>
+            <View style={styles.itemList}>
                 <View style={styles.item}>
                     <Text style={stylesglobal.text}>Customer</Text>
                     <Text style={stylesglobal.text}>{item?.customer}</Text>
@@ -54,6 +54,9 @@ const styles = StyleSheet.create({
     },
     itemHead: {
         flexDirection: 'column',
+    },
+    itemList: {
+        marginTop: 16,
     },
     item: {
         flexDirection: 'row',
